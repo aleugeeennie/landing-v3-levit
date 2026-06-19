@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Gracias por solicitar información de LEVITAT en Playa del Carmen. Agenda tu visita." />
+  <title>¡Ya casi! — LEVITAT</title>
+  <link rel="icon" href="assets/logo-color.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="levitat.css" />
+</head>
+<body class="thankyou-page">
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <canvas class="confetti-canvas" id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <section class="ty">
+    <canvas class="particles" aria-hidden="true"></canvas>
+
+    <div class="ty-back">
+      <div class="container">
+        <a class="brand" href="index.html" aria-label="Levitat"><img src="assets/logo-blanco.svg" alt="Levitat" /></a>
+        <a class="btn magnetic" href="index.html">← Volver al inicio</a>
+      </div>
+    </div>
+
+    <div class="container ty-grid">
+      <div class="ty-copy">
+        <p class="eyebrow ty-eyebrow">Solicitud recibida</p>
+        <h1>¡Ya casi!</h1>
+        <p class="ty-sub">Recibimos tu solicitud. Último paso: elige el horario que te quede mejor y tu cita queda confirmada al instante.</p>
+        <ol class="ty-steps">
+          <li><span class="n">1</span> Elige día y hora en el calendario.</li>
+          <li><span class="n">2</span> Recibe la confirmación al instante.</li>
+          <li><span class="n">3</span> Llega a tu cita y conoce el proyecto en persona.</li>
+        </ol>
+        <div class="ty-pills">
+          <span>Sin compromiso</span>
+          <span>Cotización sin costo</span>
+        </div>
+      </div>
+
+      <div class="ty-card">
+        <div id="calendlySlot" style="display:flex;flex:1">
+          <!-- Si CALENDLY_URL está vacío en levitat.js, se muestra este placeholder -->
+          <div class="ty-placeholder">
+            <div class="ico">📅</div>
+            <h3>Elige tu horario</h3>
+            <p>Aquí se mostrará tu calendario de Calendly. Conéctalo pegando tu enlace en <code>levitat.js</code> (campo <code>CALENDLY_URL</code>), o continúa por WhatsApp.</p>
+            <a class="btn btn--aqua magnetic" id="tyWhatsapp" href="https://wa.me/529981708202" target="_blank" rel="noopener">Continuar por WhatsApp →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="levitat.js"></script>
+</body>
+</html>
