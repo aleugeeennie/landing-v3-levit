@@ -66,8 +66,8 @@ p{margin:0}
 /* ---------- Headlines ---------- */
 .h-display{font-size:clamp(2.3rem,5.2vw,4.4rem);line-height:.98;letter-spacing:-.055em}
 .h-section{font-size:clamp(1.9rem,3.8vw,3.2rem);line-height:1.0;letter-spacing:-.05em;margin-top:18px}
-.lead{max-width:54ch;color:#FFFF!important;font-size:clamp(1rem,1.2vw,1.12rem);line-height:1.65}
-.dark .lead{color:#FFFF!important;}
+.lead{max-width:54ch;color:var(--muted);font-size:clamp(1rem,1.2vw,1.12rem);line-height:1.65}
+.dark .lead{color:var(--muted-light)}
 
 .line-wrap{display:block;overflow:hidden}
 .line{display:block;transform:translateY(110%);transition:transform 1s var(--spring)}
